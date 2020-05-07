@@ -1,40 +1,18 @@
-/*
-=
-+=
--=
-/=
-%=
-*/
+function calc() {
+  var a = parseInt(document.querySelector("#nilai1").value);
+  var b = parseInt(document.querySelector("#nilai2").value);
+  var op = document.querySelector("#operator").value;
+  var calculate;
 
-var number = 10;
-//number = number +5;
-number += 5;
+  if (op == "tambah") {
+    calculate = a + b;
+  } else if (op == "kurang") {
+    calculate = a - b;
+  } else if (op == "bagi") {
+    calculate = a / b;
+  } else if (op == "kali") {
+    calculate = a * b;
+  }
 
-//Arithmetic Operators
-/*
-=
--
-*
-/
-*/
-
-var number2 = 5 * 10;
-
-console.log(number);
-console.log(number2);
-
-//String Operators
-var age = 27;
-var info = "My name is Daniel, I am " + age + " years old" + 10;
-console.log(info);
-
-var numbers = 4 + " " + 5;
-console.log(numbers);
-
-if (age == 27 && number2 == 40) {
-  console.log("If!");
-} else if ((number = 10)) {
-  console.log("else if");
-} else {
-  console.log("Else!");
+  document.querySelector("#hasil").innerHTML = calculate;
 }

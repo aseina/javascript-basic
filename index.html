@@ -3,10 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Belajar Javascript</title>
+    <title></title>
   </head>
   <body>
-    <h2>Saya sedang belajar Javascript</h2>
+    <form>
+      Nilai1:<input type="text" id="nilai1" /><br />
+      Nilai2:<input type="text" id="nilai2" /><br />
+      Operator:
+      <select name="" id="operator">
+        <option value="tambah">Tambah</option>
+        <option value="kurang">Kurang</option>
+        <option value="bagi">Bagi</option>
+        <option value="kali">Kali</option>
+      </select>
+      <button type="button" onclick="calc()">Hitung</button>
+    </form>
+
+    <div id="hasil"></div>
   </body>
   <script src="./app.js"></script>
 </html>
